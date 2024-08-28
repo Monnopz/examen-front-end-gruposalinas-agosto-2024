@@ -1,5 +1,5 @@
 <script setup>
-
+import Select from 'primevue/select';
 </script>
 
 <template>
@@ -8,9 +8,9 @@
   </header>
 
   <main>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div class="">
+        <Select optionLabel="name" placeholder="Select a City" class="w-full md:w-56" />
+    </div>
   </main>
 </template>
 

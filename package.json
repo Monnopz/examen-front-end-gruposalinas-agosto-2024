@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "primevue": "^4.0.5",
+    "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.4.29"
   },
   "devDependencies": {
