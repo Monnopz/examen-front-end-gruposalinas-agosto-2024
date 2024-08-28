@@ -1,24 +1,26 @@
-import { ref, computed } from 'vue'
+import { ref, computed, reactive } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useTestStore = defineStore('test', () => {
 
-  const count = ref(0)
-
-  const doubleCount = computed(() => count.value * 2)
-
-  function increment() {
-    count.value++
-  }
+  const ORCForm = reactive({
+    proyectID: null,
+    proyectName: null,
+    proyectDescription: null,
+    proyectGoals: null,
+    startDate: null,
+    endDate: null,
+    createdDate: null,
+    proyectCapex: null,
+    proyectOpex: null,
+    proyectPilar: null,
+    proyectInvestment: null,
+  })
 
   return { 
 
     // State
-    count, 
-
-    // Actions
-    doubleCount, 
-    increment 
+    ORCForm
 
   }
 })
